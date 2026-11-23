@@ -71,15 +71,7 @@ docker compose up --build
 This starts 5 containers: `db` (Postgres), `redis`, `api`, `worker`, `beat`.
 Interactive API docs: http://localhost:8000/docs
 
-Useful commands:
 
-```bash
-docker compose ps                  # check all services are up
-docker compose logs -f worker      # watch the worker process tasks
-docker compose down                # stop, keep data
-docker compose down -v             # stop and wipe the database
-docker compose run --rm api pytest # run tests inside the container
-```
 
 ### Run tests locally
 
